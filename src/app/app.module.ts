@@ -7,13 +7,15 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { Router, RouterModule } from '@angular/router';
 import { CarritoComponent } from './carrito/carrito.component';
 import { HomeComponent } from './home/home.component';
+import { ContactosComponent } from './contactos/contactos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticulosComponent,
     CarritoComponent,
-    HomeComponent
+    HomeComponent,
+    ContactosComponent
   ],
   imports: [
     BrowserModule,
