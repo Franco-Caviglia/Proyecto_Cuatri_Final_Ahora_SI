@@ -4,13 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticulosComponent } from './articulos/articulos.component';
-import { CarritoComponent } from './carrito/carrito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticulosComponent,
-    CarritoComponent
+    ArticulosComponent
   ],
   imports: [
     BrowserModule,
