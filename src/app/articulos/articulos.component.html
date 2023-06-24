@@ -10,8 +10,8 @@
         <span *ngIf="articulo.rodado">Rodado: {{articulo.rodado}}</span>
         <span *ngIf="articulo.material">Material: {{articulo.material}}</span>
         <span *ngIf="articulo.peso">Peso: {{articulo.peso}}</span>
-        <span *ngIf="articulo.precio">Precio: {{articulo.precio}}</span>
+        <span *ngIf="articulo.precio">Precio: ${{articulo.precio}}</span>
     </div>
-    <button class="btn-carrito">Agregar</button>
+    <button class="btn-carrito" (click)="agregarCarrito()">Agregar</button>
 </div>
 </div>

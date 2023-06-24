@@ -62,7 +62,7 @@ export class ArticulosComponent implements OnInit{
         marca:"Foxter 4.20",
         rodado:"Rod 26",
         material:"Aluminio",
-        precio:30.987,
+        precio:30987,
         tipo: 'Rueda',
         peso: ''
       },
@@ -71,7 +71,7 @@ export class ArticulosComponent implements OnInit{
         marca:"Vrc 701 Houston",
         rodado:"Rod 28",
         material:"Aluminio",
-        precio:16.500,
+        precio:16500,
         tipo: 'Rueda',
         peso: ''
       },
@@ -80,10 +80,16 @@ export class ArticulosComponent implements OnInit{
         marca:" Shimano Deore Xt",
         rodado:"Rod 29",
         material:"Aluminio",
-        precio:158.336,
+        precio:158336,
         tipo: 'Rueda',
         peso: ''
       }
     ]
+  }
+
+  agregarCarrito(){
+    this.servicioCarrito.diparadorArticulo.emit(
+      {data: this.dataEntrante}
+    )
   }
 }
